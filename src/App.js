@@ -11,16 +11,28 @@ const Conatiner = styled.div`
 
 export default function App() {
   return (
-    <div className="App">
-      <h3>React styled components demo</h3>
-      <Conatiner>
-        styled components styling
-        <p style={{ background: "red", color: "white" }}>
-          Inline styling Styling
-        </p>
-        <p className="external-css"> external .css file styleing </p>
-        <p className={style.externalCss}>Module css demonstartion</p>
-      </Conatiner>
-    </div>
+    <>
+      <div className="App">
+        <h3>React styled components demo</h3>
+        <Conatiner>
+          styled components styling
+          <p style={{ background: "red", color: "white" }}>
+            Inline styling Styling
+          </p>
+          <p className="external-css"> external .css file styleing </p>
+          <p className={style.externalCss}>Module css demonstartion</p>
+        </Conatiner>
+        <button type="button" class="btn btn-primary m-4">
+          Primary
+        </button>
+      </div>
+      <input
+        class="form-control"
+        type="text"
+        value="Bootstraop read only input..."
+        aria-label="readonly input example"
+        readonly
+      />
+    </>
   );
 }
